@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThePiano", "ThePiano.csproj", "{286F4D3F-909E-DB08-6D9C-4458FB58CB22}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{286F4D3F-909E-DB08-6D9C-4458FB58CB22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{286F4D3F-909E-DB08-6D9C-4458FB58CB22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{286F4D3F-909E-DB08-6D9C-4458FB58CB22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{286F4D3F-909E-DB08-6D9C-4458FB58CB22}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
