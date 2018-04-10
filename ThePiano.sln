@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2017
+# Visual Studio 15
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThePiano", "ThePiano.csproj", "{286F4D3F-909E-DB08-6D9C-4458FB58CB22}"
 EndProject
 Global
