@@ -14,3 +14,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TestOptions.unity
     guid: d28d0eaa6a17c6142a373522901c8041
+  - enabled: 1
+    path: Assets/Scenes/EnemyBattle.unity
+    guid: 71b482133f50dac41ab46810bd908b6b
+  - enabled: 1
+    path: Assets/Scenes/second.unity
+    guid: a07cf10bc248b134f9bad1acf8c4c2db

@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - PianoBlock
+  - PianoBrick
+  - Piano
+  - TextScore
+  - TextGame
   layers:
   - Default
   - TransparentFX
