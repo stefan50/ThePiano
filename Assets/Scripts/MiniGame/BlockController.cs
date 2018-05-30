@@ -8,6 +8,7 @@ public class BlockController : MonoBehaviour {
 	private GameObject brick;
 	private bool isPressed;
 	private int score;
+	private int maxScore;
 
 	void Update()
 	{
@@ -22,14 +23,23 @@ public class BlockController : MonoBehaviour {
 		isPressed = false;
 		brick = GameObject.FindWithTag("PianoBrick");
 		score = GameObject.FindWithTag("Piano").GetComponent<ScoreController>().score;
+		maxScore = GameObject.FindWithTag("Piano").GetComponent<ScoreController>().maxScore;
 	}
 	
 	void OnTriggerStay2D(Collider2D other)
 	{
-		if(Input.GetKeyDown(keyToPress))
+		if(Input.GetKeyDown("q"))
+		{
+			GameObject.FindWithTag("Piano").GetComponent<ScoreController>().score = -10;
+		}
+		else if(Input.GetKeyDown("e"))
+		{
+			GameObject.FindWithTag("Piano").GetComponent<ScoreController>().score = 10;
+		}
+		else if(Input.GetKeyDown(keyToPress))
 		{
 			isPressed = true;
-			if(score < 5 && score > -5)
+			if(score < maxScore && score > -5)
 			{
 				GameObject.FindWithTag("Piano").GetComponent<ScoreController>().score++;
 				Instantiate(brick);
@@ -42,7 +52,7 @@ public class BlockController : MonoBehaviour {
 	{
 		if(!isPressed)
 		{
-			if(score < 5 && score > -5)
+			if(score < maxScore && score > -5)
 			{
 				GameObject.FindWithTag("Piano").GetComponent<ScoreController>().score--;
 				Instantiate(brick);

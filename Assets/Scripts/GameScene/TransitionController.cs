@@ -18,9 +18,8 @@ public class TransitionController : MonoBehaviour {
 	
 	void OnTriggerEnter2D(Collider2D other)
 	{
-		//SceneManager.LoadScene(sceneName);
+		SceneManager.LoadScene(sceneName);
 		Mc.startPoint = exitPoint;
-		Application.LoadLevel(sceneName);
-		
+		//Application.LoadLevel(sceneName);
 	}
 }

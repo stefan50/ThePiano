@@ -11,6 +11,7 @@ public class PlayerMove : MonoBehaviour
     private Vector2 lastMove;
 	private Rigidbody2D myRig;
 	private static bool doesExist; 
+	public bool hasKey;
 	
 	public string startPoint;
 	

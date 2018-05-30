@@ -9,6 +9,9 @@ TagManager:
   - Piano
   - TextScore
   - TextGame
+  - Enemy
+  - TextLives
+  - PopUp
   layers:
   - Default
   - TransparentFX

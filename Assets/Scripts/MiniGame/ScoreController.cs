@@ -7,18 +7,21 @@ using UnityEngine.SceneManagement;
 public class ScoreController : MonoBehaviour {
 	
 	public int score;
+	public int maxScore = 5;
+	private PlayerMove Mc;
 	
 	void Start () {
 		score = 0;
+		Mc = FindObjectOfType<PlayerMove>();
 	}
 	
 	void Update () {
 		GameObject.FindWithTag("TextScore").GetComponent<Text>().text = "Score: " + score;
-		if(score == 5)
+		if(score >= maxScore)
 		{
 			StartCoroutine(Win());
 		}
-		else if(score == -5)
+		else if(score <= -5)
 		{
 			StartCoroutine(Lose());
 		}
@@ -27,6 +30,7 @@ public class ScoreController : MonoBehaviour {
 	IEnumerator Lose()
 	{
 		GameObject.FindWithTag("TextGame").GetComponent<Text>().text = "YOU LOSE";
+		Mc.startPoint = "Start";
 		yield return new WaitForSeconds(3);
 		SceneManager.LoadScene("first");
 	}
@@ -35,6 +39,6 @@ public class ScoreController : MonoBehaviour {
 	{
 		GameObject.FindWithTag("TextGame").GetComponent<Text>().text = "YOU WIN";
 		yield return new WaitForSeconds(3);
-		Application.LoadLevel("first");
+		SceneManager.LoadScene("first");
 	}
 }
